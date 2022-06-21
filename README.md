@@ -3,7 +3,7 @@
 Collection of useful functions for `build.zig`.
 Examples are listed in the source code.
 
-```
+```zig
 pub const Options = struct {
     enable_stdout: bool = false,
     enable_stderr: bool = false,
