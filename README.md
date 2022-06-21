@@ -3,6 +3,14 @@
 Collection of useful functions for `build.zig`.
 Examples are listed in the source code.
 
+## Getting started
+
+```bash
+curl https://raw.githubusercontent.com/knarkzel/utils/master/src/main.zig -o utils.zig
+```
+
+## Docs
+
 ```zig
 pub const Options = struct {
     enable_stdout: bool = false,
