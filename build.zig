@@ -1,9 +1,11 @@
 const std = @import("std");
+const utils = @import("src/main.zig");
 
-pub fn build(b: *std.build.Builder) void {
+pub fn build(b: *std.build.Builder) !void {
+    b.build_root = try utils.root(b.build_root);
     const mode = b.standardReleaseOptions();
 
-    const lib = b.addStaticLibrary("root", "src/main.zig");
+    const lib = b.addStaticLibrary("utils", "src/main.zig");
     lib.setBuildMode(mode);
     lib.install();
 
