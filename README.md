@@ -9,7 +9,7 @@ Examples are listed in the source code.
 curl https://raw.githubusercontent.com/knarkzel/utils/master/src/main.zig -o utils.zig
 ```
 
-## Docs
+## Documentation
 
 ```zig
 pub const Options = struct {
